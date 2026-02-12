@@ -6,6 +6,7 @@
 git config --global user.name <seu nome aqui>
 git config --global user.email <seu email aqui>
 ```
+
 	– Criando Personal Access Token (PAT) no GitHub
 	1. Entre na página inicial do GitHub
 	1. No canto superior direito clique na foto do seu perfil

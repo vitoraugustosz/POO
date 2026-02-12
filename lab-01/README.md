@@ -9,17 +9,17 @@ git config --global user.email <seu email aqui>
 
 – Criando Personal Access Token (PAT) no GitHub
 
-	1. Entre na página inicial do GitHub
-	1. No canto superior direito clique na foto do seu perfil
-	1. Na aba que abrir acesse _settings_. 
-	1. Na aba da esquerda nas configurações, vá na última opção de _Developter Settings_.
-	1. Acesse _Personal ACess Tokens_
-	1. escolha a opção _classic_
-	1. Clique no botão _generate new token_. 
-	1. Selecione as opções desejadas, como as opções _repo_ para que esse token possa trabalhar com seus repositórios, por exemplo
-	1. No final da página, conclua o processo
-	1. Uma tela aparecerá para escolher o tempo desejado
-	1. Em seguida, o token será apresentado para ser copiado
+1. Entre na página inicial do GitHub
+1. No canto superior direito clique na foto do seu perfil
+1. Na aba que abrir acesse _settings_. 
+1. Na aba da esquerda nas configurações, vá na última opção de _Developter Settings_.
+1. Acesse _Personal ACess Tokens_
+1. escolha a opção _classic_
+1. Clique no botão _generate new token_. 
+1. Selecione as opções desejadas, como as opções _repo_ para que esse token possa trabalhar com seus repositórios, por exemplo
+1. No final da página, conclua o processo
+1. Uma tela aparecerá para escolher o tempo desejado
+1. Em seguida, o token será apresentado para ser copiado
 	
 	– Salvar em cache as credenciais do PAT
 ```bash

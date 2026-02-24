@@ -10,5 +10,6 @@
 
 ----
 ## Aulas
-- [Aula 01](./aula-01) - Introdução à linguagem Java
-
+- [Aula 01](./aula-01) - Conceitos de controle de versão
+- [Aula 02](./aula-02) - Instrodução a linguagem Java
+- [Aula 03](./aula 03) - Alinhamento da turma de conceitos de Java

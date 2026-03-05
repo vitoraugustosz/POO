@@ -70,26 +70,21 @@ public class Main {
               * *
                *      
                  
-                  *
-                * * *
-              * * * * *
-            * * * * * * *
-              * * * * *
-                * * *
-                  *
-                    
             */
 
             int largura = Integer.parseInt(args[1]);
 
             //part de cima
-            for (int i = 0; i < largura; i++) {
+            for (int i = 0; i < largura-1; i++) {
+                
                 
                 //loop dos espaços em branco
-                for (int j = 1; j <= largura - i; j++){
+                //ele printa espaços em brancona linha da largura, sem precisar
+                for (int j = 1; j < largura - i -1 ; j++){
                     System.out.print("  ");
                 }
                 //loop dos asteriscos
+                //Ele faz uma linha a mais
                 for (int j = 0; j < (2*i-1); j++) {
                     System.out.print("* ");
                 }
@@ -100,10 +95,9 @@ public class Main {
 
             //I+1
             // PARTE DE BAIXO
-            for(i=0;i<largura;i++){
-                sout
+            
                 
-            }
+            
                 
             }
         

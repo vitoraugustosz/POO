@@ -101,6 +101,7 @@ public class Main {
             //I+1
             // PARTE DE BAIXO
             for(i=0;i<largura;i++){
+                sout
                 
             }
                 

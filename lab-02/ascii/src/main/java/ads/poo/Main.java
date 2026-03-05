@@ -64,8 +64,11 @@ public class Main {
             * * * * *
               * * *  
                 *
-                 
-                 
+               *
+              * *
+            * * * *
+              * *
+               *      
                  
                   *
                 * * *
@@ -78,33 +81,25 @@ public class Main {
 
             int largura = Integer.parseInt(args[1]);
             int espacos = largura-1;
+            int numAsteriscos = 1;
+            int numLinhas = largura/2;
 
-            for (int i = 0; i < largura; i++) {
+            int meio = largura/2;
 
-                // isso aqui fechou
-                for (int j = 0; j < espacos-Math.pow(2, i); j++) {
-                    System.out.print(" ");
-                }
+            for (int i = 0; i < args.length; i++) {
                 
-
-                if (i==0){
-                    System.out.println("*");
-                }else if (i%2==0){//se é par
-                    for (int j = 0; j < i+1; j++) {
-                        System.out.print("* ");
-                    }
-                    System.out.println("");
-                } else {// se é ímpar
-                    for (int j = 0; j < i+2; j++) {
-                        System.out.print("* ");
-                    }    
-                    System.out.println("");
-                }
-
             }
+        
+
+    }
+
+    private static void ImprimirEspacos(int linhas, int estrelas){
+
+
+        for (int i = 0; i < espacos; i++) {
             
         }
-        
+
 
     }
 }

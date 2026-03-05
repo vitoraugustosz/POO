@@ -76,17 +76,33 @@ public class Main {
             * * * * * * *
               * * * * *
                 * * *
-                  * 
+                  *
+                    
             */
 
             int largura = Integer.parseInt(args[1]);
-            int espacos = largura-1;
-            int numAsteriscos = 1;
-            int numLinhas = largura/2;
 
-            int meio = largura/2;
+            //part de cima
+            for (int i = 0; i < largura; i++) {
+                
+                //loop dos espaços em branco
+                for (int j = 1; j <= largura - i; j++){
+                    System.out.print("  ");
+                }
+                //loop dos asteriscos
+                for (int j = 0; j < (2*i-1); j++) {
+                    System.out.print("* ");
+                }
+                //pula a linha
+                System.out.println(" ");
 
-            for (int i = 0; i < args.length; i++) {
+            }
+
+            //I+1
+            // PARTE DE BAIXO
+            for(i=0;i<largura;i++){
+                
+            }
                 
             }
         
@@ -96,9 +112,7 @@ public class Main {
     private static void ImprimirEspacos(int linhas, int estrelas){
 
 
-        for (int i = 0; i < espacos; i++) {
-            
-        }
+
 
 
     }

@@ -85,7 +85,6 @@ public class Horario {
 
     private String escreverPorExtenso(int valor){
         return switch (valor){
-            case 0 -> "";
             case 1 -> "um";
             case 2 -> "dois";
             case 3 -> "três";
@@ -121,14 +120,12 @@ public class Horario {
             int unidade = valor%10;
             String dezenaTxt = escreverPorExtenso(dezena);
             String unidadeTxt = escreverPorExtenso(unidade);
+            String  = String.format(dezenaTxt, "s %s", unidadeTxt);
         }
     }
 
     public String porExtenso(){
-        if (this.hora>=20){
-            int dez = this.hora/10;
-            String dezS =
-        }
+
     }
 
     /* Imprimir em segundos

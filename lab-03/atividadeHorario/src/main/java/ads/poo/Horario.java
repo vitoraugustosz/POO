@@ -83,7 +83,7 @@ public class Horario {
     /*Imprimir por extenso
     * */
 
-    private String escreverPorExtenso(int valor){
+    private String converterNumeroEmTexto(int valor){
         return switch (valor){
             case 1 -> "um";
             case 2 -> "dois";
@@ -109,23 +109,30 @@ public class Horario {
             case 40 -> "quarenta";
             case 50 -> "cinquenta";
             default -> "";
-
         };
 
     }
 
-    public int cortarValor(int valor){
+    // true = m, false = f
+    private String condicionarExtenso(int valor, boolean genero){
+        String escrita;
         if (valor>=20){
-            int dezena = valor/10;
             int unidade = valor%10;
-            String dezenaTxt = escreverPorExtenso(dezena);
-            String unidadeTxt = escreverPorExtenso(unidade);
-            String  = String.format(dezenaTxt, "s %s", unidadeTxt);
+            int dezena = valor-unidade;
+            String dezenaTxt = converterNumeroEmTexto(dezena);
+            String unidadeTxt = (unidade == 1 && !genero ) ? "uma" : (unidade == 2 && !genero) ? "duas" : converterNumeroEmTexto(unidade);
+            return String.format("%s e %s", dezenaTxt, unidadeTxt);
+        } else {
+            return (valor == 1 && !genero ) ? "uma" : (valor == 2 && !genero) ? "duas" : converterNumeroEmTexto(valor);
         }
     }
 
-    public String porExtenso(){
 
+    public String porExtenso(){
+        String hEx = condicionarExtenso(this.hora, false);
+        String mEx = condicionarExtenso(this.minuto, true);
+        String segEx = condicionarExtenso(this.segundo, true);
+        return String.format("%s hora, %s minutos, %s segundos", hEx, mEx, segEx);
     }
 
     /* Imprimir em segundos

@@ -5,5 +5,8 @@ package ads.poo;
 public class Main {
     static void main() {
 
+        Horario minhaHora = new Horario(22, 43, 42);
+
+        System.out.println(minhaHora.porExtenso());
     }
 }

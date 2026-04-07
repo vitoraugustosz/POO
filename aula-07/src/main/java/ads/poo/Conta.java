@@ -3,18 +3,14 @@ import java.util.Random;
 public class Conta {
 
     private String nome;
-    private String id;
+    private int id;
     private double saldo;
     private Random random = new Random();
 
-    public Conta(double saldo, String nome) {
+    public Conta(String nome, double saldo) {
         this.setId();
         this.setNome(nome);
         this.setSaldo(saldo);
-    }
-
-    public Conta() {
-        this.setId();
     }
 
     private void setSaldo(double saldo) {
@@ -22,11 +18,20 @@ public class Conta {
     }
 
     private void setId() {
-        int n = random.nextInt(100000);
-        this.id = String.format("%05d", n);
+        this.id = random.nextInt(100000);
     }
 
-    private void setNome(String nome) {
+    public int getId() {
+        return id;
+    }
+
+    public String getNome() {
+    return nome;
+    }
+    public double getSaldo() {
+    return saldo;
+    }
+private void setNome(String nome) {
         this.nome = nome;
     }
 

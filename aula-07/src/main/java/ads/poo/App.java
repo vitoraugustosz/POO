@@ -27,7 +27,7 @@ public class App {
                     """);
             entrada = Integer.valueOf(IO.readln("Entre com uma opção: "));
             app.menu(entrada);
-        }while(entrada != 5);
+        } while(entrada != 5);
     }
 
     //switch case da opção escolhida pelo usuario

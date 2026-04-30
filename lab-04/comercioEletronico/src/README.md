@@ -49,7 +49,7 @@ classDiagram
     
     Pedido "0..*" o-- "1..*" Produto
     
-    Cliente "1" *-- "1..*" Endereco 
+    Cliente "1" *-- "0..*" Endereco 
     
     
 
